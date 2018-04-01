@@ -2,10 +2,7 @@ public class DayOfTheWeek {
 
     public static void main(String[] args) {
  
-        /*
-         Wan-Chun Su
-         260729936
-         */
+      
  
         //Declaring the variables for year(y), month(m), day(d)
         int y,m,d;
@@ -17,7 +14,7 @@ public class DayOfTheWeek {
         int y0, m0, d0, x;
   
   
-        //Your code Starts here
+    
   
         //Assigning the variables y0, x, m0, and d0
         y0 = y - (14 - m)/12;
@@ -42,7 +39,7 @@ public class DayOfTheWeek {
             System.out.println("SATURDAY");
         }
 
-        //Your code Ends here
+      
     }
 
 }
