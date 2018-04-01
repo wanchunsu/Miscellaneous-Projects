@@ -1,10 +1,7 @@
 public class JudgeScore {
     public static void main(String[] args) {
  
-        /*
-         Wan-Chun Su
-         260729936
-         */ 
+      
  
         //Declaring the variables for storing the judges scores.
         int judge1, judge2, judge3, judge4;
@@ -13,7 +10,7 @@ public class JudgeScore {
         judge3 = Integer.valueOf(args[2]);
         judge4 = Integer.valueOf(args[3]);
   
-        //Your code Starts here
+       
   
         //Declaring the variable for the final score
         double score;
@@ -59,6 +56,6 @@ public class JudgeScore {
         score = (total-(max + min))/2;
         System.out.println(score);
   
-        //Your code Ends here
+        
     }
 }
