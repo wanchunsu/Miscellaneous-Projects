@@ -2,16 +2,13 @@ public class ISBN {
 
     public static void main(String[] args) {
  
-        /*
-         Wan-Chun Su 
-         260729936
-         */
+    
  
         //Declaring the variable to represent the ISBN number
         int n = Integer.parseInt(args[0]);
         
         
-        //Your code Starts here
+  
         
         //Declaring and assigning the first 4 digits of the ISBN by using the powers of 10
         int d5 = n/1000;
@@ -39,7 +36,7 @@ public class ISBN {
             System.out.println(d1);
         }
        
-        //Your code Ends here
+       
     }
 
 }
