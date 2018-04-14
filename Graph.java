@@ -1,4 +1,4 @@
-package assignment4Graph;
+
 
 public class Graph {
 	
@@ -16,19 +16,19 @@ public class Graph {
 	}
 	
 	public void addEdge (int i, int j){
-		// ADD YOUR CODE HERE
+		
 		this.adjacency[i][j]=true;
 		this.adjacency[j][i] = true;
 	}
 	
 	public void removeEdge (int i, int j){
-		// ADD YOUR CODE HERE
+		
 		this.adjacency[i][j]=false;
 		this.adjacency[j][i] = false;
 	}
 	
 	public int nbEdges(){
-		// ADD YOUR CODE HERE
+		
 		int edges=0;
 		int selfLoopEdges=0;
 		
@@ -46,11 +46,11 @@ public class Graph {
 			}
 		}
 		//each edge is counted twice, so need to divide by 2
-		return edges/2+selfLoopEdges; // DON'T FORGET TO CHANGE THE RETURN
+		return edges/2+selfLoopEdges; 
 	}
 	
 	public boolean cycle(int start){
-		// ADD YOUR CODE HERE
+		
 		//Declaring and initializing variables that are passed as input for the dfs method
 		//Initializing to -1 for array elements(i.e. empty)
 		boolean[] visited = new boolean[nbNodes];
@@ -72,7 +72,7 @@ public class Graph {
 		}
 	
 		return false;
-		// DON'T FORGET TO CHANGE THE RETURN
+		
 	}
 	//A helper method for the cycle method
 	//Using an int array, nodesVisited,  to store the nodes that were visited(excluding the start node and the node visited right before a particular node)
@@ -143,7 +143,7 @@ public class Graph {
 	}
 	
 	public int shortestPath(int start, int end){
-		// ADD YOUR CODE HERE
+		
 		// start node equals end node
 		if (start == end) {
 			// if is a self-loop 
@@ -200,7 +200,7 @@ public class Graph {
 		shortestPath = this.backtrack(nodeAndParent, shortestPath, indexOfEnd);
 		
 		return shortestPath;
-		 // DON'T FORGET TO CHANGE THE RETURN
+		
 	}
 	//Helper method to check if a 2D array is empty(i.e. all entries are -1)
 	//Used in pathOfDescending and pathOfAscending helper methods for shortestPath
